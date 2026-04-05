@@ -1,0 +1,23 @@
+{
+  "name": "base-nft-contracts",
+  "version": "1.0.0",
+  "description": "NFT smart contracts for Base L2",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat run scripts/deploy_nft.js --network baseSepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy_nft.js --network baseMainnet",
+    "mint:sepolia": "hardhat run scripts/mint_nft.js --network baseSepolia",
+    "coverage": "hardhat coverage",
+    "lint": "solhint contracts/**/*.sol"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "hardhat": "^2.19.0",
+    "solhint": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "merkletreejs": "^0.3.11",
+    "keccak256": "^1.0.6"
+  }
+}
